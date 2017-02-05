@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "TogglePower",
+      "slots": [
+        {
+          "name": "Value",
+          "type": "TOGGLE"
+        }
+      ]
+    }
+  ]
+}
