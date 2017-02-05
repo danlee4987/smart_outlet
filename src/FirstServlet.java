@@ -44,8 +44,6 @@ public class FirstServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		if (request.getParameter("button1") != null) {
-				
-				
 				try {
 					//serial.lightOn();
 					SerialConnection.lightOn(5);
@@ -59,18 +57,16 @@ public class FirstServlet extends HttpServlet {
 	        	System.out.println("pressed");
 	        } else if (request.getParameter("button3") != null) {
 	        	//the Date and time at which you want to execute
-	            
-
 	        	 DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	        	 Date date = null;
 	        	 try {
-					date = dateFormatter .parse("2017-02-05 02:40:00");
+	        		 String[] placeArr = request.getParameterValues("dateValue");
+					 date = dateFormatter .parse(placeArr[0]);
 				} catch (ParseException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 	        	
-				
 	            //Now create the time and schedule it
 	            Timer timer = new Timer();
 	            timer.schedule(new TimedTask(), date);
@@ -78,7 +74,6 @@ public class FirstServlet extends HttpServlet {
 	            
 	        	System.out.println("pressed");
 	        } else {
-	            // ???
 	        }
 	        request.getRequestDispatcher("index.html").forward(request, response);
 	}
