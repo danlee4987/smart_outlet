@@ -90,7 +90,13 @@ li a:hover {
 		<input type = "text" name = "dateValue"/>
 	</div>
 </form>
-
-
+<h2>Current Time of Use Rates</h2>
+<b>Off-Peak | 8.7 cents/kWh -</b> Weekdays 7:00 pm to 7:00 am and All Day on Weekends & Holidays<br><br>
+<b>Mid-Peak | 13.2 cents/kWh -</b> Weekdays 11:00 am to 5:00 pm<br><br>
+<b>On-Peak | 18.0 cents/kWh -</b> Weekdays 7:00 am to 11:00 am and 5:00 pm to 7:00 pm<br><br>
+<figure>
+    <img src=tou_winter-2016.png alt="Power Consumption"></img>
+    <figcaption>Time of Use Rate Chart</figcaption>
+</figure>
 </body>
 </html>
