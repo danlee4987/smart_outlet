@@ -7,15 +7,54 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="lit.js"></script>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4b88b6;
+    text-align: center;
+    height: 50px;
+        vertical-align: center;
+        font-size: 20;
+        border:5px;
+}
+
+li {
+    text-align: center;
+    vertical-align: center;
+    display: inline-block;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    vertical-align: center;
+
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
 <link rel="stylesheet" type="text/css" href="lit.css">
 <title>Smart Outlet</title>
 </head>
-<body>
+<body align="center">
+  <div style="content-align:center; border:2px;border-style:solid;"><ul>
+  <li><img src="graffiti.png" height="50px"/></li>
+</ul></div>
+        <br><br>
+
 <form action="http://4e2a7189.ngrok.io/smartDevices/FirstServlet" method="post">
     <div style="text-align: center">
         <input type="submit" class=button value="Turn On" name="button1"/>
         <input type="submit" class=button value="Turn Off" name="button2"/>
         <input type="submit" class=button value="Button 3" name="button3"/>
+        <br/>
     </div>
 </form>
 <select>
